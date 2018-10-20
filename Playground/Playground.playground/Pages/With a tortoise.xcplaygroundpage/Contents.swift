@@ -4,24 +4,33 @@ import PlaygroundSupport
 import TortoiseGraphics
 import CoreGraphics
 
-let canvas = PlaygroundCanvas(frame: CGRect(x: 0, y: 0, width: 300, height: 300))
-canvas.frameRate = 30
+let myFrame = CGRect(x: 0, y: 0, width: 300, height: 300)
+let canvas = PlaygroundCanvas(frame: myFrame)
+canvas.frameRate = 300
 canvas.color = .white
 PlaygroundPage.current.liveView = canvas
 
-canvas.drawing { 🐢 in 
-    🐢.penColor(.red)
-    🐢.fillColor(.orange)
 
-    🐢.penUp()
-    🐢.back(100)
-    🐢.penDown()
- 
-    // Turtle Star!
-    🐢.beginFill()
-    🐢.repeat(36) {
-        🐢.forward(200)
-        🐢.left(170)
+//background
+canvas.color = Color.green
+
+canvas.drawing { turtle in
+    
+    turtle.fillColor(.black)
+    
+    //draw a square
+    
+    turtle.beginFill()
+    
+    for _ in 1...36 {
+        for _ in 1...4 {
+            
+            turtle.forward(100)
+            turtle.right(90)
+        }
+        turtle.right(10)
     }
-    🐢.endFill()
+    
+    turtle.endFill()
 }
+
