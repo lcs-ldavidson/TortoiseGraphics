@@ -2,7 +2,7 @@ import CoreGraphics
 
 public class GraphicsCanvas: Canvas {
 
-    private var tortoiseCharmer = TortoiseCharmer(tortoiseCount: 0)
+    private var tortoiseCharmer = TortoiseCharmer(tortoiseCount: 1)
     private let graphicsContext: GraphicsContext
 
     public init(size: CGSize, context: CGContext) {
