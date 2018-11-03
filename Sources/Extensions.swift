@@ -61,7 +61,9 @@ public extension Tortoise {
 
         for sidesDrawn in 1...Int(sides) {
 
-            self.penSize(Double(brushSize))
+
+
+
 
             self.forward(size)
 
@@ -71,7 +73,7 @@ public extension Tortoise {
                 self.left(1.8)
             }
 
-            //changing whether or not the brush is changing
+//            changing whether or not the brush is changing
 
             if sidesDrawn < (sides/3) {
                 brushUpOrDown = 0
@@ -81,7 +83,7 @@ public extension Tortoise {
                 brushUpOrDown = 2
             }
 
-            //changing the brush size
+//            changing the brush size
 
             if brushUpOrDown == 0 {
                 if brushSize <= penSize {
@@ -90,12 +92,14 @@ public extension Tortoise {
             } else if brushUpOrDown == 1 {
 
             } else if brushUpOrDown == 2 {
-                if brushSize >= 2 {
-                brushSize -= 2
-                }
+
+                brushSize -= 0.1
+
             }
 
         }
+
+        self.penUp()
 
     }
 
