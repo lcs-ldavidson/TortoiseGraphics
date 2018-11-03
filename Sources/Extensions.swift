@@ -61,10 +61,6 @@ public extension Tortoise {
 
         for sidesDrawn in 1...Int(sides) {
 
-
-
-
-
             self.forward(size)
 
             if size >= 0 {
@@ -73,7 +69,7 @@ public extension Tortoise {
                 self.left(1.8)
             }
 
-//            changing whether or not the brush is changing
+            //            changing whether or not the brush is changing
 
             if sidesDrawn < (sides/3) {
                 brushUpOrDown = 0
@@ -83,7 +79,7 @@ public extension Tortoise {
                 brushUpOrDown = 2
             }
 
-//            changing the brush size
+            //            changing the brush size
 
             if brushUpOrDown == 0 {
                 if brushSize <= penSize {
@@ -93,13 +89,39 @@ public extension Tortoise {
 
             } else if brushUpOrDown == 2 {
 
-                brushSize -= 0.1
+//                brushSize -= 0.1
 
             }
 
         }
 
         self.penUp()
+
+    }
+
+    func drawcurve(sideLength size: Int, drawSides sides: Int, withtotalSides totalSides: Int, curveRight rorL: Bool) {
+
+        for sidesDrawn in 1...sides {
+
+            self.penDown()
+            
+            //natural stroke attempt
+            
+            
+            
+            
+            
+            
+            
+            self.forward(Double(size))
+
+            if rorL == true {
+                self.right(Double(360/totalSides))
+            } else {
+                self.left(Double(360/totalSides))
+            }
+
+        }
 
     }
 
