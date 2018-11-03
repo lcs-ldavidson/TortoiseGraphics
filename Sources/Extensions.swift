@@ -101,18 +101,26 @@ public extension Tortoise {
 
     func drawcurve(sideLength size: Int, drawSides sides: Int, withtotalSides totalSides: Int, curveRight rorL: Bool) {
 
+        //variables
+        var brushSize = 15
+
         for sidesDrawn in 1...sides {
 
             self.penDown()
-            
+
             //natural stroke attempt
-            
-            
-            
-            
-            
-            
-            
+
+            if sidesDrawn < (sides/2) {
+                brushSize += (15/(sides/2))
+            } else if sidesDrawn == (sides/2) {
+                self.penSize(30)
+            } else if sidesDrawn > (sides/2) {
+                brushSize -= (15/(sides/2))
+            }
+
+            self.penSize(Double(brushSize))
+
+            //drawing the curve
             self.forward(Double(size))
 
             if rorL == true {

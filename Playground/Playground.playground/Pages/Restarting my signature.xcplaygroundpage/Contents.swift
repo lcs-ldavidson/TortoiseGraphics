@@ -13,6 +13,9 @@ PlaygroundPage.current.liveView = canvas
 
 canvas.drawing { turtle in
     
+    turtle.hideTortoise()
+    
+    
     turtle.drawcurve(sideLength: 1, drawSides: 360, withtotalSides: 360, curveRight: true)
     
     
