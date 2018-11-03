@@ -90,7 +90,7 @@ public extension Tortoise {
             } else if brushUpOrDown == 1 {
 
             } else if brushUpOrDown == 2 {
-                if penSize >= 5 {
+                if brushSize >= 2 {
                 brushSize -= 2
                 }
             }
