@@ -22,7 +22,7 @@ canvas.drawing { turtle in
     turtle.penUp()
     turtle.left(-70)
     turtle.curve(withSize: -25, drawSides: 16, maxPenSize:  30)
-    turtle.curve(withSize: -2.5, drawSides: 200, maxPenSize: 30)
+    
     turtle.left(180)
     turtle.curve(withSize: 25, drawSides: 16, maxPenSize: 30)
     turtle.right(180)

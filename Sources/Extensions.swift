@@ -71,15 +71,27 @@ public extension Tortoise {
                 self.left(1.8)
             }
             
+            //changing whether or not the brush is changing
+            
+            if sidesDrawn < (sides/3) {
+                brushUpOrDown = 0
+            } else if sidesDrawn >= (sides/3) && sidesDrawn < ((sides/3) * 2) {
+                brushUpOrDown = 1
+            } else if sidesDrawn > ((sides/3) * 2) {
+                brushUpOrDown = 2
+            }
+            
+            //changing the brush size
+            
             if brushUpOrDown == 0 {
-                brushSize += 1
+                
+                brushSize += 2
+                
             } else if brushUpOrDown == 1 {
                 
             } else if brushUpOrDown == 2 {
-                brushSize -= 1
+                brushSize -= 2
             }
-            
-            
             
         }
         
