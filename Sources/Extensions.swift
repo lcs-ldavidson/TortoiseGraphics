@@ -133,4 +133,58 @@ public extension Tortoise {
 
     }
 
+    func upperCaseL() {
+
+        self.left(90)
+        self.penSize(15)
+        self.penDown()
+        self.forward(150)
+        self.left(20)
+        self.drawcurve(sideLength: 3, drawSides: 40, withtotalSides: 360, curveRight: false)
+        self.right(9)
+        self.drawcurve(sideLength: 1, drawSides: 360, withtotalSides: 360, curveRight: false)
+        self.left(30)
+        self.drawcurve(sideLength: 5, drawSides: 50, withtotalSides: 360, curveRight: false)
+        self.drawcurve(sideLength: 1, drawSides: 360, withtotalSides: 360, curveRight: true)
+        self.right(15)
+        self.drawcurve(sideLength: 3, drawSides: 50, withtotalSides: 360, curveRight: false)
+        self.left(15)
+
+    }
+
+    func lowerCaseI() {
+
+        self.drawcurve(sideLength: 2, drawSides: 90, withtotalSides: 360, curveRight: false)
+        self.right(180)
+        self.drawcurve(sideLength: 2, drawSides: 90, withtotalSides: 360, curveRight: false)
+
+    }
+
+    func lowerCaseA() {
+
+        self.drawcurve(sideLength: 1, drawSides: 360, withtotalSides: 360, curveRight: false)
+        self.drawcurve(sideLength: 1, drawSides: 90, withtotalSides: 360, curveRight: false)
+        self.forward(60)
+        self.back(57)
+        self.right(180)
+        self.drawcurve(sideLength: 1, drawSides: 90, withtotalSides: 360, curveRight: false)
+
+    }
+
+    func lowerCaseM() {
+
+        self.drawcurve(sideLength: 1, drawSides: 90, withtotalSides: 360, curveRight: false)
+        self.forward(60)
+        self.back(60)
+        self.back(57)
+        self.drawcurve(sideLength: 2, drawSides: 180, withtotalSides: 360, curveRight: true)
+        self.right(180)
+        self.drawcurve(sideLength: 2, drawSides: 180, withtotalSides: 360, curveRight: true)
+        self.drawcurve(sideLength: 1, drawSides: 180, withtotalSides: 360, curveRight: false)
+        self.drawcurve(sideLength: 5, drawSides: 90, withtotalSides: 360, curveRight: false)
+        self.forward(550)
+        self.drawcurve(sideLength: 1, drawSides: 170, withtotalSides: 360, curveRight: false)
+
+    }
+
 }
