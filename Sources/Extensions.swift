@@ -110,13 +110,13 @@ public extension Tortoise {
 
             //natural stroke attempt
 
-            if sidesDrawn < (sides/2) {
-                brushSize += (15/(sides/2))
-            } else if sidesDrawn == (sides/2) {
-                self.penSize(30)
-            } else if sidesDrawn > (sides/2) {
-                brushSize -= (15/(sides/2))
-            }
+//            if sidesDrawn < (sides/2) {
+//                brushSize += (15/(sides/2))
+//            } else if sidesDrawn == (sides/2) {
+//                self.penSize(30)
+//            } else if sidesDrawn > (sides/2) {
+//                brushSize -= (15/(sides/2))
+//            }
 
             self.penSize(Double(brushSize))
 
