@@ -83,12 +83,13 @@ class CanvasView: NSView {
             //}
             
             turtle.penUp()
-            turtle.goto(-150, 250)
+            turtle.goto(-300, 250)
             
-            turtle.upperCaseL()
-            turtle.lowerCaseI()
-            turtle.lowerCaseA()
-            turtle.lowerCaseM()
+            turtle.upperCaseL(scaleFactor: 1)
+            turtle.lowerCaseI(scaleFactor: 1)
+            turtle.lowerCaseA(scaleFactor: 1)
+            turtle.lowerCaseM(scaleFactor: 1)
+            
             
             turtle.penSize(2)
             
