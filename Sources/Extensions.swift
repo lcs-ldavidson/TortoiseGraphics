@@ -89,7 +89,7 @@ public extension Tortoise {
 
             } else if brushUpOrDown == 2 {
 
-//                brushSize -= 0.1
+                //                brushSize -= 0.1
 
             }
 
@@ -110,13 +110,13 @@ public extension Tortoise {
 
             //natural stroke attempt
 
-//            if sidesDrawn < (sides/2) {
-//                brushSize += (15/(sides/2))
-//            } else if sidesDrawn == (sides/2) {
-//                self.penSize(30)
-//            } else if sidesDrawn > (sides/2) {
-//                brushSize -= (15/(sides/2))
-//            }
+            //            if sidesDrawn < (sides/2) {
+            //                brushSize += (15/(sides/2))
+            //            } else if sidesDrawn == (sides/2) {
+            //                self.penSize(30)
+            //            } else if sidesDrawn > (sides/2) {
+            //                brushSize -= (15/(sides/2))
+            //            }
 
             self.penSize(Double(brushSize))
 
@@ -184,6 +184,38 @@ public extension Tortoise {
         self.drawcurve(sideLength: Int(5 * scale), drawSides: 90, withtotalSides: 360, curveRight: false)
         self.forward(550 * scale)
         self.drawcurve(sideLength: Int(1 * scale), drawSides: 170, withtotalSides: 360, curveRight: false)
+
+    }
+
+    func hairball(centerPointX x: Double, centerPointY y: Double, squiggleFactor turn: Double, numberOfArms arms: Double, armLength length: Double) {
+
+        for _ in 1...Int(arms) {
+
+            self.penUp()
+
+            self.goto(x, y)
+
+            for _ in 1...Int(self.random(30) + 10) {
+                self.penDown()
+                self.forward(length)
+                self.right(self.random(turn) - (turn / 2))
+            }
+            
+            self.penDown()
+            
+            for _ in 1...4 {
+            
+            self.forward(10)
+            self.back(10)
+            self.right(5)
+            
+            }
+                
+            self.penUp()
+            self.goto(x, y)
+            self.setHeading(self.random(360))
+
+        }
 
     }
 
