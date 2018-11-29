@@ -45,9 +45,9 @@ class CanvasView: NSView {
                     
                     //                    turtle.penColor(turtle.random(255), turtle.random(255), turtle.random(255))
                     
-                    turtle.penSize(turtle.random(4))
+                    turtle.penSize(turtle.random(2))
                     
-                    turtle.hairball(centerPointX: 0, centerPointY: 0, squiggleFactor: turtle.random(100), numberOfArms: turtle.random(30) + 20, armLength: turtle.random(30))
+                    turtle.hairball(centerPointX: 0, centerPointY: 0, squiggleFactor: turtle.random(200), numberOfArms: turtle.random(15) + 20, armLength: turtle.random(30))
                 }
                 
                 turtle.setHeading(90)
@@ -70,6 +70,51 @@ class CanvasView: NSView {
                     turtle.penSize(1)
                     turtle.drawcurve(sideLength: i, drawSides: 20, withtotalSides: 20, curveRight: true)
                 }
+                
+                //again
+                
+                turtle.setHeading(87)
+                
+                for i in 1...5 {
+                    turtle.penUp()
+                    turtle.goto(-25, 10)
+                    turtle.penDown()
+                    turtle.penColor(.white)
+                    turtle.penSize(1)
+                    turtle.drawcurve(sideLength: i, drawSides: 20, withtotalSides: 20, curveRight: true)
+                }
+                
+                for i in 1...5 {
+                    turtle.penUp()
+                    turtle.goto(25, 10)
+                    turtle.penDown()
+                    turtle.penColor(.white)
+                    turtle.penSize(1)
+                    turtle.drawcurve(sideLength: i, drawSides: 20, withtotalSides: 20, curveRight: true)
+                }
+                
+                
+                
+                //pupils
+                
+                turtle.setHeading(90)
+                
+                turtle.penUp()
+                turtle.goto(-23, 5)
+                turtle.penDown()
+                turtle.penColor(.black)
+                turtle.penSize(2)
+                turtle.drawcurve(sideLength: 1, drawSides: 60, withtotalSides: 60, curveRight: true)
+                
+                
+                
+                
+                turtle.penUp()
+                turtle.goto(27, 5)
+                turtle.penDown()
+                turtle.penColor(.black)
+                turtle.penSize(2)
+                turtle.drawcurve(sideLength: 1, drawSides: 60, withtotalSides: 60, curveRight: true)
                 
                 
                 
