@@ -53,6 +53,13 @@
 		9EEA674A218B95A4000375A8 /* DrawMyNameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA6749218B95A4000375A8 /* DrawMyNameUITests.swift */; };
 		9EEA6756218B95E1000375A8 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEA6755218B95E1000375A8 /* CanvasView.swift */; };
 		9EEAD4CE218351DE0026D9B7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EEAD4CD218351DE0026D9B7 /* Extensions.swift */; };
+		9EF7927121C15A1B00C0580B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7927021C15A1B00C0580B /* AppDelegate.swift */; };
+		9EF7927321C15A1B00C0580B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7927221C15A1B00C0580B /* ViewController.swift */; };
+		9EF7927521C15A2000C0580B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9EF7927421C15A2000C0580B /* Assets.xcassets */; };
+		9EF7927821C15A2000C0580B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EF7927621C15A2000C0580B /* Main.storyboard */; };
+		9EF7928421C15A2000C0580B /* Wiggle_WormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7928321C15A2000C0580B /* Wiggle_WormTests.swift */; };
+		9EF7928F21C15A2000C0580B /* Wiggle_WormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7928E21C15A2000C0580B /* Wiggle_WormUITests.swift */; };
+		9EF7929C21C15AC200C0580B /* CanvasViewWiggle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EF7929B21C15AC200C0580B /* CanvasViewWiggle.swift */; };
 		OBJ_109 /* TortoiseGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = OBJ_53 /* TortoiseGraphics.framework */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +98,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 9EEA6728218B95A0000375A8;
 			remoteInfo = DrawMyName;
+		};
+		9EF7928021C15A2000C0580B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EF7926D21C15A1B00C0580B;
+			remoteInfo = "Wiggle Worm";
+		};
+		9EF7928B21C15A2000C0580B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9EF7926D21C15A1B00C0580B;
+			remoteInfo = "Wiggle Worm";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -153,6 +174,20 @@
 		9EEA674B218B95A4000375A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9EEA6755218B95E1000375A8 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
 		9EEAD4CD218351DE0026D9B7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9EF7926E21C15A1B00C0580B /* Wiggle Worm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Wiggle Worm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF7927021C15A1B00C0580B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9EF7927221C15A1B00C0580B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9EF7927421C15A2000C0580B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9EF7927721C15A2000C0580B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9EF7927921C15A2000C0580B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EF7927A21C15A2000C0580B /* Wiggle_Worm.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Wiggle_Worm.entitlements; sourceTree = "<group>"; };
+		9EF7927F21C15A2000C0580B /* Wiggle WormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wiggle WormTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF7928321C15A2000C0580B /* Wiggle_WormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wiggle_WormTests.swift; sourceTree = "<group>"; };
+		9EF7928521C15A2000C0580B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EF7928A21C15A2000C0580B /* Wiggle WormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Wiggle WormUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EF7928E21C15A2000C0580B /* Wiggle_WormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wiggle_WormUITests.swift; sourceTree = "<group>"; };
+		9EF7929021C15A2000C0580B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EF7929B21C15AC200C0580B /* CanvasViewWiggle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasViewWiggle.swift; sourceTree = "<group>"; };
 		OBJ_53 /* TortoiseGraphics.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = TortoiseGraphics.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_54 /* TortoiseGraphicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; path = TortoiseGraphicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
@@ -195,6 +230,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9EEA6742218B95A4000375A8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF7926B21C15A1B00C0580B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF7927C21C15A2000C0580B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF7928721C15A2000C0580B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -302,6 +358,38 @@
 			path = DrawMyNameUITests;
 			sourceTree = "<group>";
 		};
+		9EF7926F21C15A1B00C0580B /* Wiggle Worm */ = {
+			isa = PBXGroup;
+			children = (
+				9EF7927021C15A1B00C0580B /* AppDelegate.swift */,
+				9EF7927221C15A1B00C0580B /* ViewController.swift */,
+				9EF7927421C15A2000C0580B /* Assets.xcassets */,
+				9EF7927621C15A2000C0580B /* Main.storyboard */,
+				9EF7927921C15A2000C0580B /* Info.plist */,
+				9EF7927A21C15A2000C0580B /* Wiggle_Worm.entitlements */,
+				9EF7929B21C15AC200C0580B /* CanvasViewWiggle.swift */,
+			);
+			path = "Wiggle Worm";
+			sourceTree = "<group>";
+		};
+		9EF7928221C15A2000C0580B /* Wiggle WormTests */ = {
+			isa = PBXGroup;
+			children = (
+				9EF7928321C15A2000C0580B /* Wiggle_WormTests.swift */,
+				9EF7928521C15A2000C0580B /* Info.plist */,
+			);
+			path = "Wiggle WormTests";
+			sourceTree = "<group>";
+		};
+		9EF7928D21C15A2000C0580B /* Wiggle WormUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9EF7928E21C15A2000C0580B /* Wiggle_WormUITests.swift */,
+				9EF7929021C15A2000C0580B /* Info.plist */,
+			);
+			path = "Wiggle WormUITests";
+			sourceTree = "<group>";
+		};
 		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
@@ -312,6 +400,9 @@
 				9EEA673D218B95A4000375A8 /* DrawMyNameTests */,
 				9EEA6748218B95A4000375A8 /* DrawMyNameUITests */,
 				9EB670BC21A7532E00753F3A /* LineArt */,
+				9EF7926F21C15A1B00C0580B /* Wiggle Worm */,
+				9EF7928221C15A2000C0580B /* Wiggle WormTests */,
+				9EF7928D21C15A2000C0580B /* Wiggle WormUITests */,
 				OBJ_52 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -327,6 +418,9 @@
 				9EB670BB21A7532E00753F3A /* LineArt.app */,
 				9EB670CC21A7533000753F3A /* LineArtTests.xctest */,
 				9EB670D721A7533000753F3A /* LineArtUITests.xctest */,
+				9EF7926E21C15A1B00C0580B /* Wiggle Worm.app */,
+				9EF7927F21C15A2000C0580B /* Wiggle WormTests.xctest */,
+				9EF7928A21C15A2000C0580B /* Wiggle WormUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
@@ -459,6 +553,59 @@
 			productReference = 9EEA6745218B95A4000375A8 /* DrawMyNameUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		9EF7926D21C15A1B00C0580B /* Wiggle Worm */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF7929721C15A2000C0580B /* Build configuration list for PBXNativeTarget "Wiggle Worm" */;
+			buildPhases = (
+				9EF7926A21C15A1B00C0580B /* Sources */,
+				9EF7926B21C15A1B00C0580B /* Frameworks */,
+				9EF7926C21C15A1B00C0580B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Wiggle Worm";
+			productName = "Wiggle Worm";
+			productReference = 9EF7926E21C15A1B00C0580B /* Wiggle Worm.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9EF7927E21C15A2000C0580B /* Wiggle WormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF7929821C15A2000C0580B /* Build configuration list for PBXNativeTarget "Wiggle WormTests" */;
+			buildPhases = (
+				9EF7927B21C15A2000C0580B /* Sources */,
+				9EF7927C21C15A2000C0580B /* Frameworks */,
+				9EF7927D21C15A2000C0580B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EF7928121C15A2000C0580B /* PBXTargetDependency */,
+			);
+			name = "Wiggle WormTests";
+			productName = "Wiggle WormTests";
+			productReference = 9EF7927F21C15A2000C0580B /* Wiggle WormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9EF7928921C15A2000C0580B /* Wiggle WormUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EF7929921C15A2000C0580B /* Build configuration list for PBXNativeTarget "Wiggle WormUITests" */;
+			buildPhases = (
+				9EF7928621C15A2000C0580B /* Sources */,
+				9EF7928721C15A2000C0580B /* Frameworks */,
+				9EF7928821C15A2000C0580B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EF7928C21C15A2000C0580B /* PBXTargetDependency */,
+			);
+			name = "Wiggle WormUITests";
+			productName = "Wiggle WormUITests";
+			productReference = 9EF7928A21C15A2000C0580B /* Wiggle WormUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		OBJ_102 /* TortoiseGraphicsTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = OBJ_103 /* Build configuration list for PBXNativeTarget "TortoiseGraphicsTests" */;
@@ -530,6 +677,20 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 9EEA6728218B95A0000375A8;
 					};
+					9EF7926D21C15A1B00C0580B = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+					};
+					9EF7927E21C15A2000C0580B = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9EF7926D21C15A1B00C0580B;
+					};
+					9EF7928921C15A2000C0580B = {
+						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9EF7926D21C15A1B00C0580B;
+					};
 					OBJ_102 = {
 						LastSwiftMigration = 0920;
 					};
@@ -559,6 +720,9 @@
 				9EB670BA21A7532E00753F3A /* LineArt */,
 				9EB670CB21A7533000753F3A /* LineArtTests */,
 				9EB670D621A7533000753F3A /* LineArtUITests */,
+				9EF7926D21C15A1B00C0580B /* Wiggle Worm */,
+				9EF7927E21C15A2000C0580B /* Wiggle WormTests */,
+				9EF7928921C15A2000C0580B /* Wiggle WormUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -604,6 +768,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		9EEA6743218B95A4000375A8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF7926C21C15A1B00C0580B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF7927521C15A2000C0580B /* Assets.xcassets in Resources */,
+				9EF7927821C15A2000C0580B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF7927D21C15A2000C0580B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF7928821C15A2000C0580B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -680,6 +867,32 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9EF7926A21C15A1B00C0580B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF7929C21C15AC200C0580B /* CanvasViewWiggle.swift in Sources */,
+				9EF7927321C15A1B00C0580B /* ViewController.swift in Sources */,
+				9EF7927121C15A1B00C0580B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF7927B21C15A2000C0580B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF7928421C15A2000C0580B /* Wiggle_WormTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EF7928621C15A2000C0580B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9EF7928F21C15A2000C0580B /* Wiggle_WormUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		OBJ_106 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
@@ -751,6 +964,16 @@
 			target = 9EEA6728218B95A0000375A8 /* DrawMyName */;
 			targetProxy = 9EEA6746218B95A4000375A8 /* PBXContainerItemProxy */;
 		};
+		9EF7928121C15A2000C0580B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EF7926D21C15A1B00C0580B /* Wiggle Worm */;
+			targetProxy = 9EF7928021C15A2000C0580B /* PBXContainerItemProxy */;
+		};
+		9EF7928C21C15A2000C0580B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9EF7926D21C15A1B00C0580B /* Wiggle Worm */;
+			targetProxy = 9EF7928B21C15A2000C0580B /* PBXContainerItemProxy */;
+		};
 		OBJ_110 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_55 /* TortoiseGraphics */;
@@ -771,6 +994,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				9EEA6732218B95A4000375A8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9EF7927621C15A2000C0580B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9EF7927721C15A2000C0580B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -1508,6 +1739,371 @@
 			};
 			name = Release;
 		};
+		9EF7929121C15A2000C0580B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Wiggle Worm/Wiggle_Worm.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Wiggle Worm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ginger-Coding.Wiggle-Worm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		9EF7929221C15A2000C0580B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_ENTITLEMENTS = "Wiggle Worm/Wiggle_Worm.entitlements";
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Wiggle Worm/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ginger-Coding.Wiggle-Worm";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		9EF7929321C15A2000C0580B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Wiggle WormTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ginger-Coding.Wiggle-WormTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wiggle Worm.app/Contents/MacOS/Wiggle Worm";
+			};
+			name = Debug;
+		};
+		9EF7929421C15A2000C0580B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Wiggle WormTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ginger-Coding.Wiggle-WormTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Wiggle Worm.app/Contents/MacOS/Wiggle Worm";
+			};
+			name = Release;
+		};
+		9EF7929521C15A2000C0580B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Wiggle WormUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ginger-Coding.Wiggle-WormUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "Wiggle Worm";
+			};
+			name = Debug;
+		};
+		9EF7929621C15A2000C0580B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Wiggle WormUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "Ginger-Coding.Wiggle-WormUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TEST_TARGET_NAME = "Wiggle Worm";
+			};
+			name = Release;
+		};
 		OBJ_104 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1702,6 +2298,33 @@
 			buildConfigurations = (
 				9EEA6750218B95A4000375A8 /* Debug */,
 				9EEA6751218B95A4000375A8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9EF7929721C15A2000C0580B /* Build configuration list for PBXNativeTarget "Wiggle Worm" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF7929121C15A2000C0580B /* Debug */,
+				9EF7929221C15A2000C0580B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9EF7929821C15A2000C0580B /* Build configuration list for PBXNativeTarget "Wiggle WormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF7929321C15A2000C0580B /* Debug */,
+				9EF7929421C15A2000C0580B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9EF7929921C15A2000C0580B /* Build configuration list for PBXNativeTarget "Wiggle WormUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9EF7929521C15A2000C0580B /* Debug */,
+				9EF7929621C15A2000C0580B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
