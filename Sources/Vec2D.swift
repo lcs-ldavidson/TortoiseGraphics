@@ -1,8 +1,8 @@
 import CoreGraphics
 
 public struct Vec2D {
-    var x: Double
-    var y: Double
+    public var x: Double
+    public var y: Double
 
     init(_ x: Double, _ y: Double) {
         self.x = x

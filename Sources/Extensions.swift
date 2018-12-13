@@ -204,16 +204,16 @@ public extension Tortoise {
             self.penDown()
 
             //hand
-            for _ in 1...4 {
-
-                self.forward(15)
-                self.right(40)
-                self.forward(15)
-                self.back(15)
-                self.left(40)
-                self.back(15)
-                self.right(20)
-            }
+//            for _ in 1...4 {
+//
+//                self.forward(15)
+//                self.right(40)
+//                self.forward(15)
+//                self.back(15)
+//                self.left(40)
+//                self.back(15)
+//                self.right(20)
+//            }
 
             self.right(30)
             self.forward(20)

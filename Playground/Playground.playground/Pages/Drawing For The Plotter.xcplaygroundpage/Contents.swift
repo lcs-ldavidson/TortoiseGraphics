@@ -12,11 +12,27 @@ PlaygroundPage.current.liveView = canvas
 
 canvas.drawing { turtle in
     
-    turtle.square(withSize: 300)
+    
+    turtle.setHeading(120)
+    turtle.penColor(.black)
+    turtle.penSize(2)
     
     
+    var hairballSize = 3
+    var wigglePositionY = -300
+    var wigglePositionX = -300
+    
+    for _ in 1...150 {
+        
+        turtle.hairball(centerPointX: Double(wigglePositionX), centerPointY: Double(wigglePositionY), squiggleFactor: turtle.random(20), numberOfArms: turtle.random(15), armLength: Double(hairballSize))
+        
+        hairballSize += 1
+        wigglePositionX += 2
+        wigglePositionY += 2
+        
+        
+    }
 }
-
 
 
 //: [Next](@next)

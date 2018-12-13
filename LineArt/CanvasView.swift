@@ -12,145 +12,164 @@ class CanvasView: NSView {
         // Instantiate a GraphicsCanvas
         let canvas = GraphicsCanvas(size: bounds.size, context: cgContext)
         
-        
-        
-        //create variables
-        var size = 600
-        var switchColor = 600
-        var r = 600.0
-        var g = 600.0
-        var b = 600.0
-        
-        
-        // Command "t" on canvas to make the turtle draw
         canvas.drawing { turtle in
             
+            turtle.hideTortoise()
             
-            turtle.fillColor(Color.white)
-            turtle.back(1000)
-            turtle.left(90)
-            turtle.beginFill()
-            for _ in 1...4 {
-                turtle.forward(100)
-                turtle.right(90)
-            }
-            turtle.endFill()
-            canvas.drawing { turtle in
+            //create variables
+
+            turtle.penSize(2)
+            
+            var hairballSize = 1
+            var wigglePositionY = -300.0
+            var wigglePositionX = -300.0
+            var wiggleFactor = 5.0
+            
+            
+            for _ in 1...800{
                 
-                turtle.hideTortoise()
+                turtle.hairball(centerPointX: turtle.position.x, centerPointY: turtle.position.y, squiggleFactor: turtle.random(50), numberOfArms: 2, armLength: Double(hairballSize / 130))
                 
+                hairballSize += 1
                 
-                for _ in 1...10 {
-                    
-                    
-                    //                    turtle.penColor(turtle.random(255), turtle.random(255), turtle.random(255))
-                    
-                    turtle.penSize(turtle.random(2))
-                    
-                    turtle.hairball(centerPointX: 0, centerPointY: 0, squiggleFactor: turtle.random(200), numberOfArms: turtle.random(15) + 20, armLength: turtle.random(30))
-                }
+                turtle.right(turtle.random(10) - 5)
                 
-                turtle.setHeading(90)
+                turtle.forward(5)
                 
                 
-                for i in 1...5 {
-                    turtle.penUp()
-                    turtle.goto(-25, 10)
-                    turtle.penDown()
-                    turtle.penColor(.white)
-                    turtle.penSize(1)
-                    turtle.drawcurve(sideLength: i, drawSides: 20, withtotalSides: 20, curveRight: true)
-                }
-                
-                for i in 1...5 {
-                    turtle.penUp()
-                    turtle.goto(25, 10)
-                    turtle.penDown()
-                    turtle.penColor(.white)
-                    turtle.penSize(1)
-                    turtle.drawcurve(sideLength: i, drawSides: 20, withtotalSides: 20, curveRight: true)
-                }
-                
-                //again
-                
-                turtle.setHeading(87)
-                
-                for i in 1...5 {
-                    turtle.penUp()
-                    turtle.goto(-25, 10)
-                    turtle.penDown()
-                    turtle.penColor(.white)
-                    turtle.penSize(1)
-                    turtle.drawcurve(sideLength: i, drawSides: 20, withtotalSides: 20, curveRight: true)
-                }
-                
-                for i in 1...5 {
-                    turtle.penUp()
-                    turtle.goto(25, 10)
-                    turtle.penDown()
-                    turtle.penColor(.white)
-                    turtle.penSize(1)
-                    turtle.drawcurve(sideLength: i, drawSides: 20, withtotalSides: 20, curveRight: true)
-                }
+//                wigglePositionX += changeX
+//                wigglePositionY += changeY
                 
                 
+                // Command "t" on canvas to make the turtle draw
+                //        canvas.drawing { turtle in
+                //
+                //
+                //            turtle.fillColor(Color.white)
+                //            turtle.back(1000)
+                //            turtle.left(90)
+                //            turtle.beginFill()
+                //            for _ in 1...4 {
+                //                turtle.forward(100)
+                //                turtle.right(90)
+                //            }
+                //            turtle.endFill()
+                //            canvas.drawing { turtle in
+                //
+                //                turtle.hideTortoise()
+                //
+                //
+                //                for _ in 1...10 {
+                //
+                //
+                //                    //                    turtle.penColor(turtle.random(255), turtle.random(255), turtle.random(255))
+                //
+                //                    turtle.penSize(turtle.random(2))
+                //
+                //                    turtle.hairball(centerPointX: 0, centerPointY: 0, squiggleFactor: turtle.random(200), numberOfArms: turtle.random(15) + 20, armLength: turtle.random(30))
+                //                }
+                //
+                //                turtle.setHeading(90)
+                //
+                //
+                //                for i in 1...5 {
+                //                    turtle.penUp()
+                //                    turtle.goto(-25, 10)
+                //                    turtle.penDown()
+                //                    turtle.penColor(.white)
+                //                    turtle.penSize(1)
+                //                    turtle.drawcurve(sideLength: i, drawSides: 20, withtotalSides: 20, curveRight: true)
+                //                }
+                //
+                //                for i in 1...5 {
+                //                    turtle.penUp()
+                //                    turtle.goto(25, 10)
+                //                    turtle.penDown()
+                //                    turtle.penColor(.white)
+                //                    turtle.penSize(1)
+                //                    turtle.drawcurve(sideLength: i, drawSides: 20, withtotalSides: 20, curveRight: true)
+                //                }
+                //
+                //                //again
+                //
+                //                turtle.setHeading(87)
+                //
+                //                for i in 1...5 {
+                //                    turtle.penUp()
+                //                    turtle.goto(-25, 10)
+                //                    turtle.penDown()
+                //                    turtle.penColor(.white)
+                //                    turtle.penSize(1)
+                //                    turtle.drawcurve(sideLength: i, drawSides: 20, withtotalSides: 20, curveRight: true)
+                //                }
+                //
+                //                for i in 1...5 {
+                //                    turtle.penUp()
+                //                    turtle.goto(25, 10)
+                //                    turtle.penDown()
+                //                    turtle.penColor(.white)
+                //                    turtle.penSize(1)
+                //                    turtle.drawcurve(sideLength: i, drawSides: 20, withtotalSides: 20, curveRight: true)
+                //                }
+                //
+                //
+                //
+                //                //pupils
+                //
+                //                turtle.setHeading(90)
+                //
+                //                turtle.penUp()
+                //                turtle.goto(-23, 5)
+                //                turtle.penDown()
+                //                turtle.penColor(.black)
+                //                turtle.penSize(2)
+                //                turtle.drawcurve(sideLength: 1, drawSides: 60, withtotalSides: 60, curveRight: true)
+                //
+                //
+                //
+                //
+                //                turtle.penUp()
+                //                turtle.goto(27, 5)
+                //                turtle.penDown()
+                //                turtle.penColor(.black)
+                //                turtle.penSize(2)
+                //                turtle.drawcurve(sideLength: 1, drawSides: 60, withtotalSides: 60, curveRight: true)
+                //
+                //
                 
-                //pupils
                 
-                turtle.setHeading(90)
-                
-                turtle.penUp()
-                turtle.goto(-23, 5)
-                turtle.penDown()
-                turtle.penColor(.black)
-                turtle.penSize(2)
-                turtle.drawcurve(sideLength: 1, drawSides: 60, withtotalSides: 60, curveRight: true)
-                
-                
-                
-                
-                turtle.penUp()
-                turtle.goto(27, 5)
-                turtle.penDown()
-                turtle.penColor(.black)
-                turtle.penSize(2)
-                turtle.drawcurve(sideLength: 1, drawSides: 60, withtotalSides: 60, curveRight: true)
-                
-                
-                
-                
-//                turtle.beginFill()
-//
-//                turtle.penUp()
-//                turtle.fillColor(.white)
-//                turtle.penColor(.white)
-//                turtle.penSize(1)
-//                turtle.goto(-25, 20)
-//                turtle.setHeading(90)
-//
-//                turtle.penDown()
-//                turtle.drawcurve(sideLength: 1, drawSides: 100, withtotalSides: 100, curveRight: true)
-//
-//                turtle.endFill()
-//
-//
-//
-//
-//
-//                turtle.beginFill()
-//
-//                turtle.penUp()
-//                turtle.fillColor(.white)
-//                turtle.penColor(.white)
-//                turtle.penSize(1)
-//                turtle.goto(25, 20)
-//                turtle.setHeading(90)
-//
-//                turtle.penDown()
-//                turtle.drawcurve(sideLength: 1, drawSides: 100, withtotalSides: 100, curveRight: true)
-//
-//                turtle.endFill()
-//
+                //                turtle.beginFill()
+                //
+                //                turtle.penUp()
+                //                turtle.fillColor(.white)
+                //                turtle.penColor(.white)
+                //                turtle.penSize(1)
+                //                turtle.goto(-25, 20)
+                //                turtle.setHeading(90)
+                //
+                //                turtle.penDown()
+                //                turtle.drawcurve(sideLength: 1, drawSides: 100, withtotalSides: 100, curveRight: true)
+                //
+                //                turtle.endFill()
+                //
+                //
+                //
+                //
+                //
+                //                turtle.beginFill()
+                //
+                //                turtle.penUp()
+                //                turtle.fillColor(.white)
+                //                turtle.penColor(.white)
+                //                turtle.penSize(1)
+                //                turtle.goto(25, 20)
+                //                turtle.setHeading(90)
+                //
+                //                turtle.penDown()
+                //                turtle.drawcurve(sideLength: 1, drawSides: 100, withtotalSides: 100, curveRight: true)
+                //
+                //                turtle.endFill()
+                //
                 
                 
                 
@@ -221,4 +240,5 @@ class CanvasView: NSView {
             //    }
         }
     }
+    
 }
