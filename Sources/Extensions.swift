@@ -102,7 +102,7 @@ public extension Tortoise {
     func drawcurve(sideLength size: Int, drawSides sides: Int, withtotalSides totalSides: Int, curveRight rorL: Bool) {
 
         //variables
-        var brushSize = 15
+        var brushSize = 2
 
         for sidesDrawn in 1...sides {
 
@@ -224,6 +224,30 @@ public extension Tortoise {
 
         }
 
+    }
+
+    func drawLegs(atX x: Double, atY y: Double, legLength length: Double) {
+
+        var randomShift = self.random(10) - 5
+        self.right(randomShift)
+
+        self.penDown()
+
+        self.right(70)
+        self.forward(length)
+        self.back(length)
+        self.left(140)
+        self.forward(length)
+        self.back(length)
+        self.left(40)
+        self.forward(length / 2)
+        self.back(length / 2)
+        self.left(140)
+        self.forward(length / 2)
+        self.back(length / 2)
+        self.left(110)
+
+        self.left(randomShift)
     }
 
 }
