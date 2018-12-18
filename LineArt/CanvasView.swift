@@ -60,9 +60,11 @@ class CanvasView: NSView {
             turtle.endFill()
             
             //drawing left eye
-            turtle.right(90)
-            turtle.forward(5)
+            turtle.goto(centerHeadX, centerHeadY)
+            turtle.setH(centerHeading)
             turtle.left(90)
+            turtle.forward(length - 5)
+            turtle.right(90)
             turtle.penColor(Color.white)
             turtle.fillColor(Color.white)
             turtle.beginFill()
@@ -84,8 +86,10 @@ class CanvasView: NSView {
             //drawing right eye
             turtle.fillColor(Color.white)
             turtle.penUp()
+            turtle.goto(centerHeadX, centerHeadY)
+            turtle.setH(centerHeading)
             turtle.right(90)
-            turtle.forward(length * 2 - 10)
+            turtle.forward(length - 5)
             turtle.left(90)
             turtle.penDown()
             turtle.beginFill()
@@ -110,16 +114,18 @@ class CanvasView: NSView {
             
             
             //draw pincers
+            
+            //draw right pincer
             turtle.penColor(Color.black)
             turtle.fillColor(Color.black)
             turtle.penUp()
             
+            turtle.goto(centerHeadX, centerHeadY)
+            turtle.setH(centerHeading)
+            turtle.forward(length - 10)
             turtle.right(90)
-            if length > 39 {
-            turtle.forward(30)
-            } else {
-                turtle.forward(20)
-            }
+            turtle.forward(length - 15)
+            turtle.left(90)
             
             turtle.penDown()
             turtle.beginFill()
@@ -127,6 +133,23 @@ class CanvasView: NSView {
             turtle.left(150)
             turtle.drawcurve(sideLength: 1, drawSides: 35, withtotalSides: 360, curveRight: true)
             turtle.endFill()
+            
+            
+            //draw left pincer
+            turtle.goto(centerHeadX, centerHeadY)
+            turtle.setH(centerHeading)
+            turtle.forward(length - 10)
+            turtle.left(90)
+            turtle.forward(length - 15)
+            turtle.right(90)
+            
+            turtle.penDown()
+            turtle.beginFill()
+            turtle.drawcurve(sideLength: 1, drawSides: 35, withtotalSides: 360, curveRight: true)
+            turtle.right(150)
+            turtle.drawcurve(sideLength: 1, drawSides: 35, withtotalSides: 360, curveRight: false)
+            turtle.endFill()
+            
             
             
             
