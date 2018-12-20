@@ -250,4 +250,146 @@ public extension Tortoise {
         self.left(randomShift)
     }
 
+    func wiggleWorm(startX x: Double, startY y: Double) {
+
+        //set self qualities
+        self.penColor(Color.black)
+        self.penSize(1)
+        self.goto(x, y)
+        self.hideTortoise()
+        self.setH(self.random(360))
+
+        //set starting leg length
+        var length = 1.0
+        var drawLongLeg = 0
+        var longLegLength = length * 3
+        //determine length of worm
+        for _ in 1 ... Int(self.random(200) + 300) {
+
+            //draw the set of legs
+            if drawLongLeg % 10 == 0 {
+                length += longLegLength
+                self.drawLegs(atX: self.ycor, atY: self.ycor, legLength: length)
+                length -= longLegLength
+            } else {
+                self.penUp()
+                self.drawLegs(atX: self.ycor, atY: self.ycor, legLength: length)
+            }
+            //increase the next legs' length
+            length += 0.09
+            drawLongLeg += 1
+
+            //turn a random amount
+            self.right(self.random(10) - 5)
+            self.forward(1)
+
+        }
+
+        //tells me what length currently is
+        print(length)
+
+        var centerHeadX = self.xcor
+        var centerHeadY = self.ycor
+        var centerHeading = self.heading
+
+        //drawing head
+        self.left(90)
+        self.forward(length)
+        self.right(90)
+        self.fillColor(Color.black)
+        self.beginFill()
+        self.drawcurve(sideLength: 6, drawSides: Int(length), withtotalSides: Int(length), curveRight: true)
+        self.endFill()
+
+        //drawing left eye
+        self.goto(centerHeadX, centerHeadY)
+        self.setH(centerHeading)
+        self.left(90)
+        self.forward(length - 5)
+        self.right(90)
+        self.penColor(Color.white)
+        self.fillColor(Color.white)
+        self.beginFill()
+        self.drawcurve(sideLength: 2, drawSides: Int(length), withtotalSides: Int(length), curveRight: true)
+        self.endFill()
+
+        //drawing left pupil
+        self.fillColor(Color.black)
+        self.beginFill()
+        self.drawcurve(sideLength: 2, drawSides: 30, withtotalSides: 30, curveRight: true)
+        self.endFill()
+
+        //drawing left shine
+        self.fillColor(Color.white)
+        self.beginFill()
+        self.drawcurve(sideLength: 1, drawSides: 20, withtotalSides: 20, curveRight: true)
+        self.endFill()
+
+        //drawing right eye
+        self.fillColor(Color.white)
+        self.penUp()
+        self.goto(centerHeadX, centerHeadY)
+        self.setH(centerHeading)
+        self.right(90)
+        self.forward(length - 5)
+        self.left(90)
+        self.penDown()
+        self.beginFill()
+        self.drawcurve(sideLength: 2, drawSides: Int(length), withtotalSides: Int(length), curveRight: false)
+        self.endFill()
+
+        //drawing right pupil
+        self.fillColor(Color.black)
+        self.beginFill()
+        self.drawcurve(sideLength: 2, drawSides: 30, withtotalSides: 30, curveRight: false)
+        self.endFill()
+
+        //drawing right pupil
+        self.fillColor(Color.white)
+        self.penUp()
+        self.left(90)
+        self.forward(10)
+        self.penDown()
+        self.beginFill()
+        self.drawcurve(sideLength: 1, drawSides: 20, withtotalSides: 20, curveRight: false)
+        self.endFill()
+
+        //draw pincers
+
+        //draw right pincer
+        self.penColor(Color.black)
+        self.fillColor(Color.black)
+        self.penUp()
+
+        self.goto(centerHeadX, centerHeadY)
+        self.setH(centerHeading)
+        self.forward(length - 10)
+        self.right(90)
+        self.forward(length - 15)
+        self.left(90)
+
+        self.penDown()
+        self.beginFill()
+        self.drawcurve(sideLength: 1, drawSides: 35, withtotalSides: 360, curveRight: false)
+        self.left(150)
+        self.drawcurve(sideLength: 1, drawSides: 35, withtotalSides: 360, curveRight: true)
+        self.endFill()
+
+        //draw left pincer
+        self.goto(centerHeadX, centerHeadY)
+        self.setH(centerHeading)
+        self.forward(length - 10)
+        self.left(90)
+        self.forward(length - 15)
+        self.right(90)
+
+        self.penDown()
+        self.beginFill()
+        self.drawcurve(sideLength: 1, drawSides: 35, withtotalSides: 360, curveRight: true)
+        self.right(150)
+        self.drawcurve(sideLength: 1, drawSides: 35, withtotalSides: 360, curveRight: false)
+        self.endFill()
+
+    }
+
 }
