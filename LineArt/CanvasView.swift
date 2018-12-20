@@ -25,16 +25,23 @@ class CanvasView: NSView {
             
             //set starting leg length
             var length = 1.0
-            
+            var drawLongLeg = 0
+            var longLegLength = length * 2
             //determine length of worm
             for _ in 1 ... Int(turtle.random(200) + 300) {
                 
                 //draw the set of legs
-                turtle.penUp()
-                turtle.drawLegs(atX: turtle.ycor, atY: turtle.ycor, legLength: length)
-                
+                if drawLongLeg % 10 == 0 {
+                    length += longLegLength
+                    turtle.drawLegs(atX: turtle.ycor, atY: turtle.ycor, legLength: length)
+                    length -= longLegLength
+                } else {
+                    turtle.penUp()
+                    turtle.drawLegs(atX: turtle.ycor, atY: turtle.ycor, legLength: length)
+                }
                 //increase the next legs' length
                 length += 0.09
+                drawLongLeg += 1
                 
                 //turn a random amount
                 turtle.right(turtle.random(10) - 5)
